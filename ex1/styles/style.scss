@@ -1,0 +1,98 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: bisque;
+    .header-container{
+        height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      .header-logo h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .header-info p {
+        font-size: 30px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .header-function button {
+        width: 250px;
+        height: 70px;
+        border-radius: 30px;
+        border: 0.4px solid white;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(200,47,237,1) 33%, rgba(6,71,162,1) 55%, rgba(204,29,238,1) 68%, rgba(0,212,255,1) 100%);
+      }
+    }
+}
+main{
+    background-color: rgb(64, 99, 0);
+    .main-cont{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .navigation{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .navigation a{
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .navigation a:hover{
+            color: rgb(255, 0, 0);
+        }
+    }
+ }
+ .popup{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .8s;
+ }
+ .open{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+    visibility:visible;
+    opacity: 1;
+    background-color: white;
+ }
+ .popup-container{
+    padding: 15px;
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+ }
+ .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .close{
+    background-color: red;
+    width: 30px ;
+    height: 30px;
+ }
