@@ -1,0 +1,135 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  margin-left: 50px;
+}
+
+.openButton {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: bisque;
+  font-size: 30px;
+}
+
+.openButton:hover {
+  background-color: #00ff15;
+  color: black;
+  border: none;
+}
+
+.newOpenButton {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.closeButton {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+}
+
+.closeButton:hover {
+  background-color: red;
+  color: white;
+}
+
+.button {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.links {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.links a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: #646464;
+  font-size: 30px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+}
+
+.menu-open.menu {
+  width: 30%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-open {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.container .container-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
